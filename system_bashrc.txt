@@ -1,0 +1,13 @@
+
+# alias vi to vim
+alias vi="vim"
+
+# JAVA Development Kit
+export JDK_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+# JAVA Development Kit
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+# PATH
+export PATH="$PATH:$JDK_HOME/bin:$JAVA_HOME/bin"
+
