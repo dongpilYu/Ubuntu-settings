@@ -15,6 +15,7 @@ Plugin 'user/L9',{'name':'newL9'}
 Plugin 'The-NERD-tree'
 Plugin 'AutoComplPop'
 Plugin 'taglist-plus'
+Plugin 'jellybeans'
 
 call vundle#end()
 filetype plugin indent on
