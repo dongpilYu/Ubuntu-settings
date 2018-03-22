@@ -8,14 +8,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'file://home/gmarik/path/to/plugin'
+"Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'file://home/gmarik/path/to/plugin'
 Plugin 'rstacruz/sparkup',{'rtp':'vim/'}
 Plugin 'user/L9',{'name':'newL9'}
 Plugin 'The-NERD-tree'
 Plugin 'AutoComplPop'
 Plugin 'taglist-plus'
-Plugin 'jellybeans'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin indent on
