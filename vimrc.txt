@@ -1,42 +1,7 @@
 set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-"set the runtime path to include Vundle and initialize
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
-"Plugin 'git://git.wincent.com/command-t.git'
-"Plugin 'file://home/gmarik/path/to/plugin'
-Plugin 'rstacruz/sparkup',{'rtp':'vim/'}
-Plugin 'user/L9',{'name':'newL9'}
-Plugin 'The-NERD-tree'
-Plugin 'AutoComplPop'
-Plugin 'taglist-plus'
-Plugin 'nanotech/jellybeans.vim'
-
-call vundle#end()
-filetype plugin indent on
-
-let NERDTREEWinPos="left"
-nmap <F7> :NERDTree<CR>
-nmap <F8> :TlistToggle<CR>
-
-filetype on
-
-let Tlist_Ctags_Cmd="/usr/bin/ctags"
-let Tlist_Inc_Winwidth=0
-let Tlist_Exit_OnlyWindow=0
-let Tlist_Auto_Open=0
-let Tlist_Use_Right_Window=1
-
-
 
 if has ("syntax")
 syntax on
-endif
 
 set nu
 set autoindent
@@ -50,4 +15,3 @@ set sc
 set hlsearch
 set ignorecase
 
-colorscheme jellybeans

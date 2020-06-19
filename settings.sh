@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 관리자 계정으로 실행할 것
+
 #----------------------------------------#
 # APT Update & Upgrade
 sudo apt-get update
@@ -14,6 +16,8 @@ sudo apt-get install -y python-pip
 sudo apt-get install -y python3-pip
 sudo apt-get install -y git
 sudo apt-get install -y vim
+sudo apt-get install -y curl
+sudo curl -fsSL https://get.docker.com/ | sudo sh
 #----------------------------------------#
 
 #----------------------------------------#
@@ -24,7 +28,10 @@ sudo cat system_bashrc.txt >> /etc/profile
 
 #----------------------------------------#
 # VIM Settings
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cat vimrc.txt >> ~/.vimrc
-vim +PluginInstall +qall
+sudo cat vimrc.txt >> ~/.vimrc
+#----------------------------------------#
+
+#----------------------------------------#
+# Ubuntu 18.04  
+sudo snap remove `sudo snap list | cut -d " " -f 1 | tail -n 2 | grep -v 'core' | tr '\n' ' '`
 #----------------------------------------#
