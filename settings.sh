@@ -22,8 +22,8 @@ sudo curl -fsSL https://get.docker.com/ | sudo sh
 
 #----------------------------------------#
 # bashrc Settings
-sudo cat system_bashrc.txt >> /etc/bash.bashrc
-sudo cat system_bashrc.txt >> /etc/profile
+sudo bash -c 'cat system_bashrc.txt >> /etc/bash.bashrc'
+sudo bash -c 'cat system_bashrc.txt >> /etc/profile'
 #----------------------------------------#
 
 #----------------------------------------#
@@ -33,5 +33,5 @@ sudo cat vimrc.txt >> ~/.vimrc
 
 #----------------------------------------#
 # Ubuntu 18.04  
-sudo snap remove `sudo snap list | cut -d " " -f 1 | tail -n 2 | grep -v 'core' | tr '\n' ' '`
+# sudo snap remove `sudo snap list | cut -d " " -f 1 | tail -n 2 | grep -v 'core' | tr '\n' ' '`
 #----------------------------------------#
